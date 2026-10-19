@@ -114,7 +114,7 @@ def note_risk(note):
     return "documented" if RISK_ANY.search(note) else "none"
 
 
-IC_REASON = re.compile(r"(caregiver|parent|guardian|third[- ]party|sentinel|mandated report|play (equipment|therapy)|"
+IC_REASON = re.compile(r"(caregiver|parent|mother|father|interfered|guardian|third[- ]party|sentinel|mandated report|play (equipment|therapy)|"
                        r"maladaptive communication|disagree|conflict(ing)? between)", re.I)
 
 
@@ -125,7 +125,8 @@ def interactive_complexity_reason(note):
 # ---------------- transcript ----------------
 ADMIN = re.compile(r"(schedul|next week|same time|reschedul|calendar|copay|co-pay|insurance|invoice|"
                    r"\bbill(ing)?\b|portal|send (me |you )?(a |the )?link|appointment|\bbye\b|take care|see you|"
-                   r"talk (to you )?soon|book (you|it|the)|card on file|receipt)", re.I)
+                   r"talk (to you )?soon|book (you|it|the)|card on file|receipt|reminder|statement|"
+                   r"\b(mon|tues|wednes|thurs|fri|satur|sun)days?\b|have a good (week|weekend|day))", re.I)
 
 
 def clinical_span(transcript):
@@ -152,7 +153,7 @@ def video_share(media, span):
 
 SI = re.compile(r"(kill(ing)? myself|end(ing)? (my life|it( all)?)\b|not (to )?wake up|better off without me|"
                 r"(want(ed)?|wish(ed)?|wanting) (I could |to )?(just )?die|wasn'?t here|not be(ing)? here|"
-                r"no point (in |of )?(living|being alive)|point of living|hurt(ing)? myself|suicid|overdos|how many pills|"
+                r"(no|don'?t see the|don'?t see any) point (in |of )?(living|being alive|going on)|hurt(ing)? myself|suicid|overdos|how many pills|"
                 r"driv(e|ing) (off|into)|thoughts of (dying|death|ending))", re.I)
 NEG = re.compile(r"\b(no|not|never|nothing|don'?t|didn'?t|wouldn'?t|won'?t|isn'?t|aren'?t|haven'?t had|without)\b", re.I)
 PAST = re.compile(r"(years ago|when I was|back (in|when)|used to|in the past|a long time|haven'?t (felt|thought)|"
