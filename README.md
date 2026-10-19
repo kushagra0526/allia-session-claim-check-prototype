@@ -7,7 +7,7 @@
 Allia's EHR "transcribes visits with consent and drafts structured notes for clinician review" and runs billing in the same system ([allia.health](https://allia.health/)). As a medical group it bills for 600+ clinicians in 32 states plus telehealth ([YC](https://www.ycombinator.com/companies/allia-health)).
 
 A claim can agree with its note and still not match the session:
-- **The time band doesn't hold.** The note says 2:00–2:55 and the claim is 90837 (53+ min). But the last 6 minutes were scheduling and copay talk, which [doesn't count](https://crowncounseling.com/codes/90837-psychotherapy-60-minutes). The clinical time was 47 minutes, so the code is 90834.
+- **The time band doesn't hold.** The note says 2:00–2:55 and the claim is 90837 (53+ min). But the last 8 minutes were scheduling and copay talk, which [doesn't count](https://crowncounseling.com/codes/90837-psychotherapy-60-minutes). The clinical time was 47 minutes, so the code is 90834.
 - **The modality is wrong.** The note template says "video", but video dropped at minute 7 and the session went on by phone. That needs the audio-only modifier, or a hold if the payer doesn't cover audio-only.
 - **The location is out of state.** The patient joined from a state where the clinician isn't licensed.
 - **The risk note contradicts the patient.** The drafted note says "denies SI", but at 24:24 the client said "I've been thinking about killing myself."
