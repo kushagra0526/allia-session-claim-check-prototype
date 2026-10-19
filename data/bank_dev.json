@@ -1,0 +1,39 @@
+{
+  "time_range": [["Start time: {s}   End time: {e}", "12"], ["Session time: {s} - {e}", "12"], ["Time in: {s} / Time out: {e}", "24"], ["Session: {s}–{e}", "12"]],
+  "duration": ["Duration: {m} minutes", "Total time: {m} min", "({m} min)"],
+  "pt_time": ["Psychotherapy time (separate from E/M): {p} minutes", "Add-on psychotherapy: {p} min, separate from E/M"],
+  "modality": {
+    "video": ["Session conducted via secure video.", "Telehealth (video) session."],
+    "audio": ["Session conducted audio-only by telephone.", "Phone session (audio-only)."],
+    "in_person": ["Session held in person at the office.", "In-office visit."]
+  },
+  "location": {
+    "home": ["Client located at home in {city}, {st}.", "Patient location: home, {city}, {st}."],
+    "other": ["Client joined from work in {city}, {st}.", "Patient location: {city}, {st} (not home)."]
+  },
+  "risk_deny": ["Risk assessment: client denies SI/HI.", "Risk: denies suicidal ideation, intent or plan."],
+  "risk_endorse": ["Risk assessment: client endorsed passive SI without plan or intent; C-SSRS screen completed; safety plan reviewed.", "Client reported thoughts of suicide this week, no plan or intent; safety plan updated; risk: moderate."],
+  "si_pos": ["Honestly some days I wish I could just not wake up.", "I've been thinking about killing myself.", "I keep thinking everyone would be better off without me.", "I looked up how many pills it would take."],
+  "si_neg": ["I'm not having any thoughts of hurting myself.", "No, nothing like wanting to die, just tired."],
+  "si_past": ["Years ago, back in college, I thought about ending it, but not since."],
+  "si_third": ["My roommate told me she wanted to die and it scared me."],
+  "admin": ["Same time next week works for you?", "Yes, that works. Can you send me the link?", "I will. Your copay will go through the card on file.", "Okay, see you next week. Take care, bye."],
+  "client_lines": ["Work has been really stressful this week.", "I tried the breathing exercise twice.", "I keep replaying the argument with my sister.", "Sleep has been a little better.", "I felt anxious before the meeting on Monday.", "I noticed the thought and wrote it down like we practiced.", "I'm not sure what I want to change yet.", "It went better than I expected."],
+  "clinician_lines": ["What did you notice in your body when that happened?", "Let's look at the evidence for that thought.", "That sounds really hard. What helped, even a little?", "How would you rate your anxiety from zero to ten?", "Let's practice that skill together now.", "What would you say to a friend in that situation?", "Can you tell me more about that?", "Let's set one small goal for the week."],
+  "si_followup": ["Thank you for telling me that. Are you having any thoughts of acting on it right now?", "I'm glad you told me. Can we talk about your safety plan?"],
+  "ic_reason": ["Interactive complexity: parent present and in disagreement with the client about the treatment plan, requiring management of maladaptive communication.", "Interactive complexity: caregiver involvement with conflicting goals required additional communication management."],
+  "bodies": {
+    "S": ["Client reports increased work stress and difficulty sleeping.", "Client describes ongoing conflict with a family member.", "Client reports practicing coping skills with partial success."],
+    "O": ["Client alert and oriented, affect anxious, speech normal rate.", "Mood euthymic, affect congruent, thought process linear."],
+    "I": ["Clinician used CBT cognitive restructuring and behavioral activation.", "Clinician reviewed coping skills and practiced diaphragmatic breathing.", "Clinician used motivational interviewing to explore ambivalence."],
+    "R": ["Client engaged well and identified two alternative thoughts.", "Client responded positively and agreed to practice daily."],
+    "P": ["Continue weekly sessions; homework: thought record.", "Follow up next week; continue CBT plan."]
+  },
+  "templates": {
+    "SOAP": "PROGRESS NOTE (SOAP) - {date}\nClinician: {clin}\n{time}\n{dur}\n{pt}\n{mod} {loc}\nS: {S}\nO: {O}\nA: {A} {risk}\nP: {P} {ic}",
+    "BIRP": "BIRP NOTE {date} | {clin}\n{time} {dur}\n{pt}\n{mod} {loc}\nBehavior: {S} {O}\nIntervention: {I}\nResponse: {R} {risk}\nPlan: {P} {ic}",
+    "DAP": "DAP Note\nDate: {date}   Provider: {clin}\n{time}   {dur}   {pt}\n{mod} {loc}\nData: {S} {O} {I}\nAssessment: {A} {risk}\nPlan: {P} {ic}"
+  },
+  "assess": ["Symptoms consistent with F41.1 generalized anxiety disorder, improving.", "F33.1 major depressive disorder, recurrent, moderate; partial response."],
+  "cities": {"CA": "Oakland", "OR": "Portland", "TX": "Austin", "OK": "Tulsa", "NY": "Albany", "NJ": "Newark", "CT": "Hartford", "NV": "Reno", "AZ": "Tucson", "FL": "Tampa", "GA": "Savannah", "WA": "Spokane", "CO": "Denver", "IL": "Chicago"}
+}

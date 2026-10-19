@@ -1,0 +1,15 @@
+{
+  "clinicians": {
+    "C01": {"name": "J. Rivera, LCSW", "cred": "LCSW", "states": ["CA", "OR"], "payers": ["PAYER_A", "PAYER_B", "PAYER_C"]},
+    "C02": {"name": "M. Okafor, LPC", "cred": "LPC", "states": ["TX", "OK"], "payers": ["PAYER_A", "PAYER_B"]},
+    "C03": {"name": "R. Chen, PsyD", "cred": "PsyD", "states": ["NY", "NJ", "CT"], "payers": ["PAYER_A", "PAYER_C"]},
+    "C04": {"name": "A. Patel, MD", "cred": "MD", "states": ["CA", "NV", "AZ"], "payers": ["PAYER_A", "PAYER_B", "PAYER_C"]},
+    "C05": {"name": "S. Brooks, PMHNP", "cred": "PMHNP", "states": ["FL", "GA"], "payers": ["PAYER_A", "PAYER_B"]},
+    "C06": {"name": "L. Haddad, LMFT", "cred": "LMFT", "states": ["CA"], "payers": ["PAYER_B", "PAYER_C"]}
+  },
+  "payers": {
+    "PAYER_A": {"name": "Payer A (Medicare-style, illustrative)", "start_stop_required": true, "video_modifier": "95", "audio_only": "93", "pos_home": "10", "pos_other": "02"},
+    "PAYER_B": {"name": "Payer B (commercial-style, illustrative)", "start_stop_required": false, "video_modifier": "95", "audio_only": null, "pos_home": "10", "pos_other": "02"},
+    "PAYER_C": {"name": "Payer C (commercial-style, illustrative)", "start_stop_required": true, "video_modifier": "95", "audio_only": "93", "pos_home": "10", "pos_other": "02"}
+  }
+}

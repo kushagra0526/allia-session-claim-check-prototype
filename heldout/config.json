@@ -1,0 +1,5 @@
+{
+  "note": "Frozen before the first held-out run. Dev tuning used seeds 1-400 with data/bank_dev.json. This set uses a phrase bank the checker was never run on: new time formats (2:03pm, 14:03, 1403-1455, 2.03 p.m.), note templates (GIRP, one-paragraph narrative, SOAP with times at the bottom), number words, new SI / negation / past / third-person lines, new scheduling and payment talk, new risk and interactive-complexity wording.",
+  "seeds": [5001, 5400],
+  "bank": "heldout/bank_heldout.json"
+}

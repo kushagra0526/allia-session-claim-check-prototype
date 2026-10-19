@@ -1,0 +1,39 @@
+{
+  "time_range": [["Began {s}, ended {e}.", "12lower"], ["Session ran from {s} to {e}", "24"], ["Time: {s}-{e}", "mil"], ["Start {s} | Stop {e}", "dot"], ["{s} to {e}", "12"]],
+  "duration": ["Length of session: {m} mins", "{m}-minute session", "{mw} minutes of face-to-face psychotherapy"],
+  "pt_time": ["Of this visit, {p} minutes were psychotherapy, distinct from the E/M service.", "Psychotherapy add-on: {pw} minutes (separate from medication management)."],
+  "modality": {
+    "video": ["Visit completed over Zoom for Healthcare.", "Synchronous audio-video telehealth visit."],
+    "audio": ["Telephone visit; client had no video access.", "Conducted by phone (audio-only)."],
+    "in_person": ["Client seen face to face in clinic.", "Office session."]
+  },
+  "location": {
+    "home": ["Client confirmed they were at home ({city}, {st}).", "Location verified at start: client's residence in {city}, {st}."],
+    "other": ["Client called in from their car in {city}, {st}.", "Client was at a friend's place in {city}, {st}."]
+  },
+  "risk_deny": ["Safety: no current suicidal ideation, intent, or plan reported.", "Client denied thoughts of self-harm or suicide. Risk low."],
+  "risk_endorse": ["Client voiced passive death wish this week; denies plan or intent. Columbia screener done; safety plan revised.", "Suicide risk assessed after client disclosed thoughts of ending her life; no plan; crisis line reviewed."],
+  "si_pos": ["Last night I sat in the car thinking it'd be easier if I just wasn't here.", "I've had thoughts of ending my life this week.", "Sometimes I think about driving into the barrier on the highway.", "I don't see the point of living anymore."],
+  "si_neg": ["I wouldn't ever hurt myself, I just feel stuck.", "Suicide? No, never, that's not where I am."],
+  "si_past": ["When I was sixteen I tried to overdose, but I haven't felt like that in a long time."],
+  "si_third": ["My brother keeps saying he wants to kill himself and I don't know what to do."],
+  "admin": ["Do you want to keep Tuesdays at four?", "Tuesday's good. Will I get a reminder text?", "Yes, and the statement for this month is in your inbox.", "All right, have a good week, see you then."],
+  "client_lines": ["My manager moved the deadline again.", "I used the grounding skill in the grocery store.", "I snapped at my partner and felt guilty after.", "I've been skipping lunch because I'm not hungry.", "The panic came back on the train.", "I journaled three nights out of seven."],
+  "clinician_lines": ["What went through your mind right before that?", "Let's map that onto the cycle we drew last time.", "How strong was the urge, zero to ten?", "What would a kinder response to yourself sound like?", "Let's rehearse what you'll say to her.", "Notice where you feel that right now."],
+  "si_followup": ["Thank you for trusting me with that. Do you have a plan or anything you'd use?", "That's important. Let's go through your safety plan together."],
+  "ic_reason": ["Interactive complexity: mother attended and her emotional reactions interfered with the client's participation.", "90785: guardian present; managed conflicting accounts between client and guardian."],
+  "bodies": {
+    "S": ["Client describes panic symptoms on public transit twice this week.", "Client reports low mood and reduced appetite.", "Client reports conflict at work and irritability at home."],
+    "O": ["Appeared tired; affect constricted; speech soft.", "Engaged, good eye contact, mood okay, affect reactive."],
+    "I": ["Exposure hierarchy reviewed; interoceptive exercise practiced in session.", "DBT distress-tolerance skills (TIPP) taught and rehearsed.", "Socratic questioning applied to core belief of failure."],
+    "R": ["Client completed the exercise with SUDS dropping from 7 to 4.", "Client was receptive and identified a trigger pattern."],
+    "P": ["Weekly therapy to continue; client to log panic episodes.", "Next session in one week; practice TIPP daily."]
+  },
+  "templates": {
+    "GIRP": "GIRP Progress Note - {date} - {clin}\n{time}; {dur}\n{pt}\n{mod} {loc}\nGoal: reduce avoidance and panic frequency.\nIntervention: {I}\nResponse: {R} {S} {O}\nPlan: {P} {risk} {ic}\nDx: {A}",
+    "NARR": "Progress note, {date}. Rendering: {clin}. {time}. {dur}. {pt} {mod} {loc} {S} {O} {I} {R} {A} {risk} Plan: {P} {ic}",
+    "SOAP2": "SOAP | {date} | {clin}\nSubjective: {S}\nObjective: {O} {mod} {loc}\nAssessment: {A} {risk}\nPlan: {P} {I} {R} {ic}\n{time} / {dur} / {pt}"
+  },
+  "assess": ["F41.0 panic disorder, improving with exposure work.", "F32.1 major depressive disorder, single episode, moderate."],
+  "cities": {"CA": "Fresno", "OR": "Eugene", "TX": "El Paso", "OK": "Norman", "NY": "Buffalo", "NJ": "Trenton", "CT": "New Haven", "NV": "Las Vegas", "AZ": "Phoenix", "FL": "Orlando", "GA": "Atlanta", "WA": "Seattle", "CO": "Boulder", "IL": "Peoria", "MI": "Detroit", "PA": "Erie"}
+}
